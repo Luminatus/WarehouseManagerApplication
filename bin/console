@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Lumie\WarehouseManagerApplication\Command\WarehouseManagerCommand;
+use Lumie\WarehouseManagerApplication\Kernel;
+use Symfony\Component\Console\Application;
+
+$kernel = new Kernel();
+$kernel->boot();
+
+$app = new Application();
+$app->add($kernel->get('warehouse_manager_command'));
+$app->run();

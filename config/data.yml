@@ -1,0 +1,74 @@
+data:
+  brands:
+    - id: 1
+      name: ASUS
+      qualityRating: 4 
+    - id: 2
+      name: CoolerMaster
+      qualityRating: 5
+    - id: 3
+      name: Sennheiser
+      qualityRating: 5
+  products:
+    - id: 1
+      type: keyboard
+      productNumber: '00001/1'
+      brand: 2
+      name: CK352 (HUN)
+      price: 75
+      layout: hungarian_qwerty
+      isRGB: true
+    - id: 2
+      type: keyboard
+      productNumber: '00001/2'
+      brand: 2
+      name: CK352 (EN)
+      price: 70
+      layout: english
+      isRGB: true
+    - id: 3
+      type: keyboard
+      productNumber: '00002/1'
+      brand: 1
+      name: TUF Gaming K7
+      price: 45
+      layout: hungarian_qwertz
+      isRGB: false
+    - id: 4
+      type: headphone
+      productNumber: '00003/1'
+      brand: 3
+      name: HD 350BT
+      price: 85
+      connectionType: bluetooth
+      audioType: surround_5_1
+    - id: 5
+      type: headphone
+      productNumber: '00003/2'
+      brand: 3
+      name: GSP 300
+      price: 75
+      connectionType: usb
+      audioType: stereo
+  warehouses:
+    - id: 1
+      name: Little warehouse on the prairie
+      address: The prairie
+      capacity: 10
+      products:
+        - productId: 1
+          quantity: 1
+    - id: 2
+      name: We need a bigger warehouse
+      address: Jaws street
+      capacity: 100
+      products: ~
+    - id: 3
+      name: Terrestrial Automated Retail Distribution Item Storage
+      address: Everywhere in time and space
+      capacity: 1000
+      products: 
+        - productId: 1
+          quantity: 400
+        - productId: 3
+          quantity: 600
